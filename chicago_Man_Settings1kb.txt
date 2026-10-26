@@ -1,0 +1,9 @@
+minFragLen	800
+maxFragLen	1200	
+binSize	5000
+minNPerBait	250
+maxLBrownEst	1500000
+weightAlpha	24.5
+weightBeta	-2.16
+weightGamma	-21.2
+weightDelta	-9.2

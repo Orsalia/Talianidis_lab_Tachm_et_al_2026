@@ -1,0 +1,54 @@
+
+library(dplyr)
+library(SpectralTAD)
+library(TADCompare)
+library(ggplot2)
+
+# Read in data (E14-E18)
+cool_E14 <- read.table("/home/orsalia/Desktop/HiC_PHiC/Final/TAD_Compare/chr8/E14_chr8.txt")
+cool_E18 <- read.table("/home/orsalia/Desktop/HiC_PHiC/Final/TAD_Compare/chr8/E18_chr8.txt")
+cool_P0 <- read.table("/home/orsalia/Desktop/HiC_PHiC/Final/TAD_Compare/chr8/P0_chr8.txt")
+cool_P60 <- read.table("/home/orsalia/Desktop/HiC_PHiC/Final/TAD_Compare/chr8/P60_chr8.txt")
+
+
+# Convert to sparse 3-column matrix using cooler2sparse from HiCcompare
+sparse_E14 <- HiCcompare::cooler2sparse(cool_E14)
+sparse_E18 <- HiCcompare::cooler2sparse(cool_E18)
+sparse_P0 <- HiCcompare::cooler2sparse(cool_P0)
+sparse_P60 <- HiCcompare::cooler2sparse(cool_P60)
+
+
+plot_E14_P60 = TADCompare(cont_mat1 = sparse_E14, cont_mat2 = sparse_P60, resolution = 20000, z_thresh = 1.5) 
+plot_E14_P60
+write.csv(plot_E14_P60$TAD_Frame,"E14_P60intertablechr8.csv")
+
+
+plot_E14_E18 = TADCompare(cont_mat1 = sparse_E14, cont_mat2 = sparse_E18, resolution = 20000, z_thresh = 1.5) 
+plot_E14_E18
+write.csv(plot_E14_E18$TAD_Frame,"E14_E18intertablechr8.csv")
+
+plot_E18_P0 = TADCompare(cont_mat1 = sparse_E18, cont_mat2 = sparse_P0, resolution = 20000, z_thresh = 1.5) 
+plot_E18_P0
+write.csv(plot_E18_P0$TAD_Frame,"E18_P0intertablechr8.csv")
+
+plot_P0_P60 = TADCompare(cont_mat1 = sparse_P0, cont_mat2 = sparse_P60, resolution = 20000, z_thresh = 1.5) 
+plot_P0_P60
+write.csv(plot_P0_P60$TAD_Frame,"P0_P60intertablechr8.csv")
+
+plot_E18_P60 = TADCompare(cont_mat1 = sparse_E18, cont_mat2 = sparse_P60, resolution = 20000, z_thresh = 1.5) 
+plot_E18_P60
+write.csv(plot_E18_P60$TAD_Frame,"E18_P60intertablechr8.csv")
+
+
+TD_Compare = TADCompare(cont_mat1 = sparse_E18, cont_mat2 = sparse_P60, resolution = 20000, z_thresh = 1.5) 
+write.csv(plot_E18_P60$TAD_Frame,"E18_P60intertable.csv")
+# Visualizing the results
+DiffPlot(tad_diff    = TD_Compare, 
+         cont_mat1   = sparse_E14,
+         cont_mat2   = sparse_E18,
+         resolution  = 20000,
+         start_coord = 115000000,
+         end_coord   = 125000000,
+         show_types  = TRUE, 
+         point_size  = 3, palette = "RdYlBu",
+         rel_heights = c(1, 2))

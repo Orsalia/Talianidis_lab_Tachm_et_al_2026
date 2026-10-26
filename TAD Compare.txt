@@ -1,0 +1,374 @@
+
+##################TAD Compare
+# TADComapre (Comparison of TADs with HiCTADCompare tools)
+
+# extract chr8 in cool format
+hicAdjustMatrix --matrix P60.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr8 -o P60_chr8.h5
+# Convert to cool
+hicConvertFormat --matrices P60_chr8.h5 -o P60_chr8.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P60_chr8.cool > P60_chr8.txt
+
+hicAdjustMatrix --matrix P0.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr8 -o P0_chr8.h5
+# Convert to cool
+hicConvertFormat --matrices P0_chr8.h5 -o P0_chr8.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P0_chr8.cool > P0_chr8.txt
+
+hicAdjustMatrix --matrix E18.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr8 -o E18_chr8.h5
+# Convert to cool
+hicConvertFormat --matrices E18_chr8.h5 -o E18_chr8.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E18_chr8.cool > E18_chr8.txt
+
+hicAdjustMatrix --matrix E14.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr8 -o E14_chr8.h5
+# Convert to cool
+hicConvertFormat --matrices E14_chr8.h5 -o E14_chr8.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E14_chr8.cool > E14_chr8.txt
+
+
+# extract chr1 in cool format
+hicAdjustMatrix --matrix P60.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr1 -o P60_chr1.h5
+# Convert to cool
+hicConvertFormat --matrices P60_chr1.h5 -o P60_chr1.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P60_chr1.cool > P60_chr1.txt
+
+hicAdjustMatrix --matrix P0.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr1 -o P0_chr1.h5
+# Convert to cool
+hicConvertFormat --matrices P0_chr1.h5 -o P0_chr1.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P0_chr1.cool > P0_chr1.txt
+
+hicAdjustMatrix --matrix E18.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr1 -o E18_chr1.h5
+# Convert to cool
+hicConvertFormat --matrices E18_chr1.h5 -o E18_chr1.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E18_chr1.cool > E18_chr1.txt
+
+hicAdjustMatrix --matrix E14.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr1 -o E14_chr1.h5
+# Convert to cool
+hicConvertFormat --matrices E14_chr1.h5 -o E14_chr1.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E14_chr1.cool > E14_chr1.txt
+
+
+# extract chr2 in cool format
+hicAdjustMatrix --matrix P60.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr2 -o P60_chr2.h5
+# Convert to cool
+hicConvertFormat --matrices P60_chr2.h5 -o P60_chr2.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P60_chr2.cool > P60_chr2.txt
+hicAdjustMatrix --matrix P0.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr2 -o P0_chr2.h5
+# Convert to cool
+hicConvertFormat --matrices P0_chr2.h5 -o P0_chr2.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P0_chr2.cool > P0_chr2.txt
+hicAdjustMatrix --matrix E18.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr2 -o E18_chr2.h5
+# Convert to cool
+hicConvertFormat --matrices E18_chr2.h5 -o E18_chr2.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E18_chr2.cool > E18_chr2.txt
+hicAdjustMatrix --matrix E14.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr2 -o E14_chr2.h5
+# Convert to cool
+hicConvertFormat --matrices E14_chr2.h5 -o E14_chr2.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E14_chr2.cool > E14_chr2.txt
+
+# extract chr3 in cool format
+hicAdjustMatrix --matrix P60.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr3 -o P60_chr3.h5
+# Convert to cool
+hicConvertFormat --matrices P60_chr3.h5 -o P60_chr3.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P60_chr3.cool > P60_chr3.txt
+hicAdjustMatrix --matrix P0.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr3 -o P0_chr3.h5
+# Convert to cool
+hicConvertFormat --matrices P0_chr3.h5 -o P0_chr3.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P0_chr3.cool > P0_chr3.txt
+hicAdjustMatrix --matrix E18.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr3 -o E18_chr3.h5
+# Convert to cool
+hicConvertFormat --matrices E18_chr3.h5 -o E18_chr3.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E18_chr3.cool > E18_chr3.txt
+hicAdjustMatrix --matrix E14.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr3 -o E14_chr3.h5
+# Convert to cool
+hicConvertFormat --matrices E14_chr3.h5 -o E14_chr3.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E14_chr3.cool > E14_chr3.txt
+
+# extract chr4 in cool format
+hicAdjustMatrix --matrix P60.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr4 -o P60_chr4.h5
+# Convert to cool
+hicConvertFormat --matrices P60_chr4.h5 -o P60_chr4.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P60_chr4.cool > P60_chr4.txt
+hicAdjustMatrix --matrix P0.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr4 -o P0_chr4.h5
+# Convert to cool
+hicConvertFormat --matrices P0_chr4.h5 -o P0_chr4.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P0_chr4.cool > P0_chr4.txt
+hicAdjustMatrix --matrix E18.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr4 -o E18_chr4.h5
+# Convert to cool
+hicConvertFormat --matrices E18_chr4.h5 -o E18_chr4.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E18_chr4.cool > E18_chr4.txt
+hicAdjustMatrix --matrix E14.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr4 -o E14_chr4.h5
+# Convert to cool
+hicConvertFormat --matrices E14_chr4.h5 -o E14_chr4.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E14_chr4.cool > E14_chr4.txt
+
+
+# extract chr5 in cool format
+hicAdjustMatrix --matrix P60.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr5 -o P60_chr5.h5
+# Convert to cool
+hicConvertFormat --matrices P60_chr5.h5 -o P60_chr5.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P60_chr5.cool > P60_chr5.txt
+hicAdjustMatrix --matrix P0.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr5 -o P0_chr5.h5
+# Convert to cool
+hicConvertFormat --matrices P0_chr5.h5 -o P0_chr5.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P0_chr5.cool > P0_chr5.txt
+hicAdjustMatrix --matrix E18.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr5 -o E18_chr5.h5
+# Convert to cool
+hicConvertFormat --matrices E18_chr5.h5 -o E18_chr5.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E18_chr5.cool > E18_chr5.txt
+hicAdjustMatrix --matrix E14.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr5 -o E14_chr5.h5
+# Convert to cool
+hicConvertFormat --matrices E14_chr5.h5 -o E14_chr5.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E14_chr5.cool > E14_chr5.txt
+
+
+# extract chr6 in cool format
+hicAdjustMatrix --matrix P60.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr6 -o P60_chr6.h5
+# Convert to cool
+hicConvertFormat --matrices P60_chr6.h5 -o P60_chr6.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P60_chr6.cool > P60_chr6.txt
+hicAdjustMatrix --matrix P0.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr6 -o P0_chr6.h5
+# Convert to cool
+hicConvertFormat --matrices P0_chr6.h5 -o P0_chr6.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P0_chr6.cool > P0_chr6.txt
+hicAdjustMatrix --matrix E18.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr6 -o E18_chr6.h5
+# Convert to cool
+hicConvertFormat --matrices E18_chr6.h5 -o E18_chr6.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E18_chr6.cool > E18_chr6.txt
+hicAdjustMatrix --matrix E14.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr6 -o E14_chr6.h5
+# Convert to cool
+hicConvertFormat --matrices E14_chr6.h5 -o E14_chr6.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E14_chr6.cool > E14_chr6.txt
+
+# extract chr7 in cool format
+hicAdjustMatrix --matrix P60.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr7 -o P60_chr7.h5
+# Convert to cool
+hicConvertFormat --matrices P60_chr7.h5 -o P60_chr7.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P60_chr7.cool > P60_chr7.txt
+hicAdjustMatrix --matrix P0.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr7 -o P0_chr7.h5
+# Convert to cool
+hicConvertFormat --matrices P0_chr7.h5 -o P0_chr7.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P0_chr7.cool > P0_chr7.txt
+hicAdjustMatrix --matrix E18.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr7 -o E18_chr7.h5
+# Convert to cool
+hicConvertFormat --matrices E18_chr7.h5 -o E18_chr7.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E18_chr7.cool > E18_chr7.txt
+hicAdjustMatrix --matrix E14.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr7 -o E14_chr7.h5
+# Convert to cool
+hicConvertFormat --matrices E14_chr7.h5 -o E14_chr7.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E14_chr7.cool > E14_chr7.txt
+
+# extract chr8 in cool format
+hicAdjustMatrix --matrix P60.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr8 -o P60_chr8.h5
+# Convert to cool
+hicConvertFormat --matrices P60_chr8.h5 -o P60_chr8.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P60_chr8.cool > P60_chr8.txt
+hicAdjustMatrix --matrix P0.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr8 -o P0_chr8.h5
+# Convert to cool
+hicConvertFormat --matrices P0_chr8.h5 -o P0_chr8.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P0_chr8.cool > P0_chr8.txt
+hicAdjustMatrix --matrix E18.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr8 -o E18_chr8.h5
+# Convert to cool
+hicConvertFormat --matrices E18_chr8.h5 -o E18_chr8.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E18_chr8.cool > E18_chr8.txt
+hicAdjustMatrix --matrix E14.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr8 -o E14_chr8.h5
+# Convert to cool
+hicConvertFormat --matrices E14_chr8.h5 -o E14_chr8.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E14_chr8.cool > E14_chr8.txt
+
+# extract chr9 in cool format
+hicAdjustMatrix --matrix P60.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr9 -o P60_chr9.h5
+# Convert to cool
+hicConvertFormat --matrices P60_chr9.h5 -o P60_chr9.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P60_chr9.cool > P60_chr9.txt
+hicAdjustMatrix --matrix P0.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr9 -o P0_chr9.h5
+# Convert to cool
+hicConvertFormat --matrices P0_chr9.h5 -o P0_chr9.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P0_chr9.cool > P0_chr9.txt
+hicAdjustMatrix --matrix E18.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr9 -o E18_chr9.h5
+# Convert to cool
+hicConvertFormat --matrices E18_chr9.h5 -o E18_chr9.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E18_chr9.cool > E18_chr9.txt
+hicAdjustMatrix --matrix E14.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr9 -o E14_chr9.h5
+# Convert to cool
+hicConvertFormat --matrices E14_chr9.h5 -o E14_chr9.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E14_chr9.cool > E14_chr9.txt
+
+# extract chr10 in cool format
+hicAdjustMatrix --matrix P60.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr10 -o P60_chr10.h5
+# Convert to cool
+hicConvertFormat --matrices P60_chr10.h5 -o P60_chr10.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P60_chr10.cool > P60_chr10.txt
+hicAdjustMatrix --matrix P0.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr10 -o P0_chr10.h5
+# Convert to cool
+hicConvertFormat --matrices P0_chr10.h5 -o P0_chr10.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P0_chr10.cool > P0_chr10.txt
+hicAdjustMatrix --matrix E18.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr10 -o E18_chr10.h5
+# Convert to cool
+hicConvertFormat --matrices E18_chr10.h5 -o E18_chr10.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E18_chr10.cool > E18_chr10.txt
+hicAdjustMatrix --matrix E14.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr10 -o E14_chr10.h5
+# Convert to cool
+hicConvertFormat --matrices E14_chr10.h5 -o E14_chr10.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E14_chr10.cool > E14_chr10.txt
+
+# extract chr11 in cool format
+hicAdjustMatrix --matrix P60.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr11 -o P60_chr11.h5
+# Convert to cool
+hicConvertFormat --matrices P60_chr11.h5 -o P60_chr11.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P60_chr11.cool > P60_chr11.txt
+hicAdjustMatrix --matrix P0.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr11 -o P0_chr11.h5
+# Convert to cool
+hicConvertFormat --matrices P0_chr11.h5 -o P0_chr11.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P0_chr11.cool > P0_chr11.txt
+hicAdjustMatrix --matrix E18.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr11 -o E18_chr11.h5
+# Convert to cool
+hicConvertFormat --matrices E18_chr11.h5 -o E18_chr11.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E18_chr11.cool > E18_chr11.txt
+hicAdjustMatrix --matrix E14.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr11 -o E14_chr11.h5
+# Convert to cool
+hicConvertFormat --matrices E14_chr11.h5 -o E14_chr11.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E14_chr11.cool > E14_chr11.txt
+
+# extract chr12 in cool format
+hicAdjustMatrix --matrix P60.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr12 -o P60_chr12.h5
+# Convert to cool
+hicConvertFormat --matrices P60_chr12.h5 -o P60_chr12.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P60_chr12.cool > P60_chr12.txt
+hicAdjustMatrix --matrix P0.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr12 -o P0_chr12.h5
+# Convert to cool
+hicConvertFormat --matrices P0_chr12.h5 -o P0_chr12.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P0_chr12.cool > P0_chr12.txt
+hicAdjustMatrix --matrix E18.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr12 -o E18_chr12.h5
+# Convert to cool
+hicConvertFormat --matrices E18_chr12.h5 -o E18_chr12.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E18_chr12.cool > E18_chr12.txt
+hicAdjustMatrix --matrix E14.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr12 -o E14_chr12.h5
+# Convert to cool
+hicConvertFormat --matrices E14_chr12.h5 -o E14_chr12.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E14_chr12.cool > E14_chr12.txt
+
+# extract chr13 in cool format
+hicAdjustMatrix --matrix P60.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr13 -o P60_chr13.h5
+# Convert to cool
+hicConvertFormat --matrices P60_chr13.h5 -o P60_chr13.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P60_chr13.cool > P60_chr13.txt
+hicAdjustMatrix --matrix P0.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr13 -o P0_chr13.h5
+# Convert to cool
+hicConvertFormat --matrices P0_chr13.h5 -o P0_chr13.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P0_chr13.cool > P0_chr13.txt
+hicAdjustMatrix --matrix E18.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr13 -o E18_chr13.h5
+# Convert to cool
+hicConvertFormat --matrices E18_chr13.h5 -o E18_chr13.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E18_chr13.cool > E18_chr13.txt
+hicAdjustMatrix --matrix E14.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr13 -o E14_chr13.h5
+# Convert to cool
+hicConvertFormat --matrices E14_chr13.h5 -o E14_chr13.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E14_chr13.cool > E14_chr13.txt
+
+# extract chr14 in cool format
+hicAdjustMatrix --matrix P60.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr14 -o P60_chr14.h5
+# Convert to cool
+hicConvertFormat --matrices P60_chr14.h5 -o P60_chr14.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P60_chr14.cool > P60_chr14.txt
+hicAdjustMatrix --matrix P0.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr14 -o P0_chr14.h5
+# Convert to cool
+hicConvertFormat --matrices P0_chr14.h5 -o P0_chr14.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P0_chr14.cool > P0_chr14.txt
+hicAdjustMatrix --matrix E18.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr14 -o E18_chr14.h5
+# Convert to cool
+hicConvertFormat --matrices E18_chr14.h5 -o E18_chr14.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E18_chr14.cool > E18_chr14.txt
+hicAdjustMatrix --matrix E14.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr14 -o E14_chr14.h5
+# Convert to cool
+hicConvertFormat --matrices E14_chr14.h5 -o E14_chr14.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E14_chr14.cool > E14_chr14.txt
+
+# extract chr15 in cool format
+hicAdjustMatrix --matrix P60.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr15 -o P60_chr15.h5
+# Convert to cool
+hicConvertFormat --matrices P60_chr15.h5 -o P60_chr15.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P60_chr15.cool > P60_chr15.txt
+hicAdjustMatrix --matrix P0.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr15 -o P0_chr15.h5
+# Convert to cool
+hicConvertFormat --matrices P0_chr15.h5 -o P0_chr15.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P0_chr15.cool > P0_chr15.txt
+hicAdjustMatrix --matrix E18.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr15 -o E18_chr15.h5
+# Convert to cool
+hicConvertFormat --matrices E18_chr15.h5 -o E18_chr15.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E18_chr15.cool > E18_chr15.txt
+hicAdjustMatrix --matrix E14.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr15 -o E14_chr15.h5
+# Convert to cool
+hicConvertFormat --matrices E14_chr15.h5 -o E14_chr15.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E14_chr15.cool > E14_chr15.txt
+
+# extract chr16 in cool format
+hicAdjustMatrix --matrix P60.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr16 -o P60_chr16.h5
+# Convert to cool
+hicConvertFormat --matrices P60_chr16.h5 -o P60_chr16.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P60_chr16.cool > P60_chr16.txt
+hicAdjustMatrix --matrix P0.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr16 -o P0_chr16.h5
+# Convert to cool
+hicConvertFormat --matrices P0_chr16.h5 -o P0_chr16.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P0_chr16.cool > P0_chr16.txt
+hicAdjustMatrix --matrix E18.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr16 -o E18_chr16.h5
+# Convert to cool
+hicConvertFormat --matrices E18_chr16.h5 -o E18_chr16.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E18_chr16.cool > E18_chr16.txt
+hicAdjustMatrix --matrix E14.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr16 -o E14_chr16.h5
+# Convert to cool
+hicConvertFormat --matrices E14_chr16.h5 -o E14_chr16.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E14_chr16.cool > E14_chr16.txt
+
+# extract chr17 in cool format
+hicAdjustMatrix --matrix P60.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr17 -o P60_chr17.h5
+# Convert to cool
+hicConvertFormat --matrices P60_chr17.h5 -o P60_chr17.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P60_chr17.cool > P60_chr17.txt
+hicAdjustMatrix --matrix P0.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr17 -o P0_chr17.h5
+# Convert to cool
+hicConvertFormat --matrices P0_chr17.h5 -o P0_chr17.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P0_chr17.cool > P0_chr17.txt
+hicAdjustMatrix --matrix E18.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr17 -o E18_chr17.h5
+# Convert to cool
+hicConvertFormat --matrices E18_chr17.h5 -o E18_chr17.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E18_chr17.cool > E18_chr17.txt
+hicAdjustMatrix --matrix E14.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr17 -o E14_chr17.h5
+# Convert to cool
+hicConvertFormat --matrices E14_chr17.h5 -o E14_chr17.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E14_chr17.cool > E14_chr17.txt
+
+# extract chr18 in cool format
+hicAdjustMatrix --matrix P60.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr18 -o P60_chr18.h5
+# Convert to cool
+hicConvertFormat --matrices P60_chr18.h5 -o P60_chr18.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P60_chr18.cool > P60_chr18.txt
+hicAdjustMatrix --matrix P0.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr18 -o P0_chr18.h5
+# Convert to cool
+hicConvertFormat --matrices P0_chr18.h5 -o P0_chr18.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P0_chr18.cool > P0_chr18.txt
+hicAdjustMatrix --matrix E18.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr18 -o E18_chr18.h5
+# Convert to cool
+hicConvertFormat --matrices E18_chr18.h5 -o E18_chr18.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E18_chr18.cool > E18_chr18.txt
+hicAdjustMatrix --matrix E14.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr18 -o E14_chr18.h5
+# Convert to cool
+hicConvertFormat --matrices E14_chr18.h5 -o E14_chr18.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E14_chr18.cool > E14_chr18.txt
+
+# extract chr19 in cool format
+hicAdjustMatrix --matrix P60.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr19 -o P60_chr19.h5
+# Convert to cool
+hicConvertFormat --matrices P60_chr19.h5 -o P60_chr19.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P60_chr19.cool > P60_chr19.txt
+hicAdjustMatrix --matrix P0.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr19 -o P0_chr19.h5
+# Convert to cool
+hicConvertFormat --matrices P0_chr19.h5 -o P0_chr19.cool --inputFormat h5 --outputFormat cool
+cooler dump --join P0_chr19.cool > P0_chr19.txt
+hicAdjustMatrix --matrix E18.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr19 -o E18_chr19.h5
+# Convert to cool
+hicConvertFormat --matrices E18_chr19.h5 -o E18_chr19.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E18_chr19.cool > E18_chr19.txt
+hicAdjustMatrix --matrix E14.norm.20kb.0_1.cor.h5 --action keep --chromosomes chr19 -o E14_chr19.h5
+# Convert to cool
+hicConvertFormat --matrices E14_chr19.h5 -o E14_chr19.cool --inputFormat h5 --outputFormat cool
+cooler dump --join E14_chr19.cool > E14_chr19.txt
+

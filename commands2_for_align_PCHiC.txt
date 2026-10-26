@@ -1,0 +1,91 @@
+python3 /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/makeDesignFiles_py3.py --rmapfile=mm10_chicago_input_1kb.rmap --baitmapfile=mm10_chicago_input_1kb.baitmap --designDir=. --outfilePrefix mm10 --minFragLen=75 --maxFragLen=12000  --maxLBrownEst=1500000 --binsize=20000
+
+python3 /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/makeDesignFiles_py3.py --rmapfile=mm10_chicago_input_1kb.rmap --baitmapfile=mm10_chicago_input_1kb.baitmap --designDir=. --outfilePrefix mm10Arima --minFragLen=800 --maxFragLen=1200  --maxLBrownEst=1500000 --binsize=5000 --minNPerBait=250
+
+python3 /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/makeDesignFiles_py3.py --rmapfile=mm10_chicago_input_5kb.rmap --baitmapfile=mm10_chicago_input_5kb.baitmap --designDir=. --outfilePrefix mm10Arima5kb --minFragLen=4000 --maxFragLen=6000  --maxLBrownEst=2000000 --binsize=25000
+
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894121-LR-66582_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_5kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_5kbmine.rmap -o AS-894121-LR-66582_chin_5kb
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894123-LR-66582_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_5kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_5kb.rmap -o AS-894123-LR-66582_chin_5kb
+
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894121-LR-66582_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_1kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_1kb.rmap -o AS-894121-LR-66582_chin_1kb
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894123-LR-66582_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_1kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_1kb.rmap -o AS-894123-LR-66582_chin_1kb
+
+
+cd /home/orsalia/Desktop/HiC_PHiC/E14/PCHiC/
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894100-LR-66581_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_5kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_5kbmine.rmap -o AS-894100-LR-66581_chin_5kb
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894102-LR-66581_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_5kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_5kb.rmap -o AS-894102-LR-66581_chin_5kb
+
+cd /home/orsalia/Desktop/HiC_PHiC/CEBP/PCHiC/
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894129-LR-66582_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_5kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_5kbmine.rmap -o AS-894129-LR-66582_chin_5kb
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894131-LR-66582_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_5kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_5kbmine.rmap -o AS-894131-LR-66582_chin_5kb
+
+cd /home/orsalia/Desktop/HiC_PHiC/E18/PCHiC/
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894104-LR-66581_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_5kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_5kbmine.rmap -o AS-894104-LR-66581_5kb
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894106-LR-66581_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_5kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_5kbmine.rmap -o AS-894106-LR-66581_5kb
+
+
+###############################################################################1kb
+cd /home/orsalia/Desktop/HiC_PHiC/E14/PCHiC/
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894100-LR-66581_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_1kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_1kb.rmap -o AS-894100-LR-66581_chin_1kb
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894102-LR-66581_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_1kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_1kb.rmap -o AS-894102-LR-66581_chin_1kb
+
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894100-LR-66581_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.rmap -o AS-894100-LR-66581_chin_1kb
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894102-LR-66581_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.rmap -o AS-894102-LR-66581_chin_1kb
+
+
+
+
+
+cd /home/orsalia/Desktop/HiC_PHiC/E18/PCHiC/
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894104-LR-66581_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_1kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_1kb.rmap -o AS-894104-LR-66581_chin_1kb
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894106-LR-66581_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_1kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/mm10_chicago_input_1kb.rmap -o AS-894106-LR-66581_chin_1kb
+
+
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894121-LR-66582_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.rmap -o AS-894121-LR-66582_chin_1kb
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894123-LR-66582_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.rmap -o AS-894123-LR-66582_chin_1kb
+
+
+
+#############################################P0
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894104-LR-66581_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.rmap -o AS-894104-LR-66581_chin_1kb
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894106-LR-66581_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.rmap -o AS-894106-LR-66581_chin_1kb
+
+####################################################CEBP
+cd /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/CEBP/
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894129-LR-66582_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.rmap -o AS-894129-LR-66582_chin_1kb
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894131-LR-66582_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.rmap -o AS-894131-LR-66582_chin_1kb
+
+cd /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/P60/
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894125-LR-66582_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.rmap -o AS-894125-LR-66582_chin_1kb
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894127-LR-66582_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.rmap -o AS-894127-LR-66582_chin_1kb
+
+
+cd /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/HNF4A/
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894112-LR-66581_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.rmap -o AS-894112-LR-66581_chin_1kb
+
+/home/orsalia/Desktop/HiC_PHiC/P0/PC_HiC/design_files/./bam2chicago_V02.sh -b AS-894114-LR-66581_R1_2.hicup.bam -t /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.baitmap -r /home/orsalia/Desktop/HiC_PHiC/PChiC_design_files_defaults/1kb/mm10_chicago_input_1kb.rmap -o AS-894114-LR-66581_chin_1kb
+
