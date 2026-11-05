@@ -30,7 +30,7 @@ The code supports investigation of chromatin organization across mouse liver dev
 | `chr8_P60_biophysics_CONTACTS_LOOPS10K_ONLY.py` | Coarse-grained chromosome 8 modeling with Hi-C contacts and loop constraints. |
 | `chr8_P60_biophysics_H3K27ac_NO_LAMIN.py` | Modeling variant incorporating H3K27ac without lamina constraints. |
 | `chr8_P60_biophysics_H3K27ac_WITH_LAMIN_3Dpdb_create.py` | Modeling variant incorporating H3K27ac and lamina-related constraints. |
-| `make_interactive_genomeflow_3d.py` | Interactive HTML comparison of chromosome models from PDB files. |
+| `make_interactive_Ariadne_3d.py` | Interactive HTML comparison of chromosome models from PDB files. |
 | `digest_genome.py`, `fixchrom.pl` | Supporting genome-processing utilities. |
 
 The filenames above reflect the repository contents at the time this README was drafted. Some `.txt` files contain executable commands or scripts; inspect them before use.
