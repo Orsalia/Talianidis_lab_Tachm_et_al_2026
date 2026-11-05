@@ -68,6 +68,23 @@ The chromosome 8 Python scripts explore coarse-grained polymer representations u
 
 **Interpretation caveat:** These are computationally inferred, data-constrained chromatin conformations, not uniquely measured single-cell chromosome structures. Model-dependent geometric quantities should not be interpreted as direct physical measurements without calibration and validation.
 
+Ariadne-3D pdb construction
+python chr8_P60_biophysics_H3K27ac_NO_LAMIN.py --contacts chr11_E18.fix.bed --loops10k chr11_E18_10kb_loops.bed --loops1k chr11_E18_valid_loops.bed --boundaries chr11_E18_boundaries.bed --h3k27ac chr11_H3K27ac_E17chip_outputv2_peaks.narrowPeak --steps 12000 --out chr11_E18_H3K27ac_Lamino
+
+chr8_P60_H3K27ac_basic_biophysics_NO_LAMIN.py
+
+Whole mouse chr8 coarse-grained chromatin model WITHOUT OpenMM.
+
+with constraints
+----------
+--contacts    P60_chr8_matrix...       dense Hi-C / contact pairs
+--loops10k    P60loops2mb...           10-kb loops
+--loops1k     P60valid.loops2_chr8...   1-kb loops
+--boundaries  P60.20kbv2_boundaries... 20-kb TAD boundaries
+--h3k27ac     H3K27ac BED/narrowPeak/bedGraph
+
+
+
 ### 5. Interactive comparison of 3D models (Ariadne-3D pipeline)
 
 `make_interactive_Ariadne_3d.py` compares PDB models for HNF4A and P60 conditions, generates alignment/displacement visualizations, and reports structural metrics in an interactive HTML interface.
@@ -82,6 +99,20 @@ python make_interactive_Ariadne_3d.py \
   --start 104860000 \
   --end 106860000 \
   --out-prefix chr8_HNF4A_P60_interactive
+
+chr8_P60_H3K27ac_Lamin_basic_biophysics.py
+
+Whole mouse chr8 coarse-grained chromatin model WITHOUT OpenMM.
+
+Data roles
+----------
+--contacts    P60_chr8_matrix...       dense Hi-C / contact pairs
+--loops10k    P60loops2mb...           10-kb loops
+--loops1k     P60valid.loops2_chr8...   1-kb loops
+--boundaries  P60.20kbv2_boundaries... 20-kb TAD boundaries
+--lamin       chr8 Lamin A/C intervals
+--h3k27ac     H3K27ac BED/narrowPeak/bedGraph
+
 ```
 
 Replace the example PDB names with your own model files. The resulting HTML visualization uses 3Dmol.js from an external URL and may require an internet connection.
