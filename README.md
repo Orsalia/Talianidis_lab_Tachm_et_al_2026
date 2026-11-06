@@ -75,7 +75,7 @@ chr8_P60_H3K27ac_basic_biophysics_NO_LAMIN.py
 
 Whole mouse chr8 coarse-grained chromatin model WITHOUT OpenMM.
 
-with constraints
+#### with constraints
 ----------
 --contacts    P60_chr8_matrix...       dense Hi-C / contact pairs
 --loops10k    P60loops2mb...           10-kb loops
