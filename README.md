@@ -64,7 +64,7 @@ R scripts, notebooks, and shell commands cover TAD comparisons, insulation profi
 
 ### 4. Data-constrained 3D chromosome modeling (Ariadne-3D pipeline)
 
-![3D Chromatin Reconstruction](Ariadne's Chromatin Thread.png)
+![ARIADNE-3D Chromatin Reconstruction](ARIADNE_3D.png)
  
 The chromosome 8 Python scripts explore coarse-grained polymer representations using combinations of Hi-C contacts, loop constraints, H3K27ac-associated information, and lamina-associated information. Model outputs can include PDB representations and geometric statistics such as radius of gyration, end-to-end distance, and convex-hull volume, depending on the script.
 
