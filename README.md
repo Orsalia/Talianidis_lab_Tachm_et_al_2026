@@ -63,8 +63,6 @@ Scripts and configuration files support preparation and analysis of promoter cap
 R scripts, notebooks, and shell commands cover TAD comparisons, insulation profiles, and aggregate contact analysis near ChIP-seq binding sites. Input matrices and genomic interval files must use compatible reference assemblies and chromosome naming conventions.
 
 ### 4. Data-constrained 3D chromosome modeling (Ariadne-3D pipeline)
-
-![ARIADNE-3D Chromatin Reconstruction](ARIADNE_3D.png)
  
 The chromosome 8 Python scripts explore coarse-grained polymer representations using combinations of Hi-C contacts, loop constraints, H3K27ac-associated information, and lamina-associated information. Model outputs can include PDB representations and geometric statistics such as radius of gyration, end-to-end distance, and convex-hull volume, depending on the script.
 
