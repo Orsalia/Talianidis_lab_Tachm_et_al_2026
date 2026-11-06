@@ -63,6 +63,15 @@ Scripts and configuration files support preparation and analysis of promoter cap
 R scripts, notebooks, and shell commands cover TAD comparisons, insulation profiles, and aggregate contact analysis near ChIP-seq binding sites. Input matrices and genomic interval files must use compatible reference assemblies and chromosome naming conventions.
 
 ### 4. Data-constrained 3D chromosome modeling (Ariadne-3D pipeline)
+<p align="center">
+  <img src="Ariadne's Chromatin Thread.png" width="750">
+</p>
+
+<p align="center">
+  <b>Figure 1.</b> Three-dimensional reconstruction of
+  chromatin architecture using Hi-C contact matrices
+  and polymer-based simulations.
+</p>
 
 The chromosome 8 Python scripts explore coarse-grained polymer representations using combinations of Hi-C contacts, loop constraints, H3K27ac-associated information, and lamina-associated information. Model outputs can include PDB representations and geometric statistics such as radius of gyration, end-to-end distance, and convex-hull volume, depending on the script.
 
@@ -72,6 +81,7 @@ Ariadne-3D pdb construction
 python chr8_P60_biophysics_H3K27ac_NO_LAMIN.py --contacts chr11_E18.fix.bed --loops10k chr11_E18_10kb_loops.bed --loops1k chr11_E18_valid_loops.bed --boundaries chr11_E18_boundaries.bed --h3k27ac chr11_H3K27ac_E17chip_outputv2_peaks.narrowPeak --steps 12000 --out chr11_E18_H3K27ac_Lamino
 
 chr8_P60_H3K27ac_basic_biophysics_NO_LAMIN.py
+chr8_P60_H3K27ac_Lamin_basic_biophysics.py
 
 Whole mouse chr8 coarse-grained chromatin model WITHOUT OpenMM.
 
@@ -81,9 +91,16 @@ Whole mouse chr8 coarse-grained chromatin model WITHOUT OpenMM.
 --loops10k    P60loops2mb...           10-kb loops
 --loops1k     P60valid.loops2_chr8...   1-kb loops
 --boundaries  P60.20kbv2_boundaries... 20-kb TAD boundaries
+--lamin       chr8 Lamin A/C intervals
 --h3k27ac     H3K27ac BED/narrowPeak/bedGraph
 
 
+----------
+--contacts    P60_chr8_matrix...       dense Hi-C / contact pairs
+--loops10k    P60loops2mb...           10-kb loops
+--loops1k     P60valid.loops2_chr8...   1-kb loops
+--boundaries  P60.20kbv2_boundaries... 20-kb TAD boundaries
+--h3k27ac     H3K27ac BED/narrowPeak/bedGraph
 
 ### 5. Interactive comparison of 3D models (Ariadne-3D pipeline)
 
@@ -100,23 +117,10 @@ python make_interactive_Ariadne_3d.py \
   --end 106860000 \
   --out-prefix chr8_HNF4A_P60_interactive
 
-chr8_P60_H3K27ac_Lamin_basic_biophysics.py
-
-Whole mouse chr8 coarse-grained chromatin model WITHOUT OpenMM.
-
-Data roles
-----------
---contacts    P60_chr8_matrix...       dense Hi-C / contact pairs
---loops10k    P60loops2mb...           10-kb loops
---loops1k     P60valid.loops2_chr8...   1-kb loops
---boundaries  P60.20kbv2_boundaries... 20-kb TAD boundaries
---lamin       chr8 Lamin A/C intervals
---h3k27ac     H3K27ac BED/narrowPeak/bedGraph
-
 ```
 
 Replace the example PDB names with your own model files. The resulting HTML visualization uses 3Dmol.js from an external URL and may require an internet connection.
-
+check out the hmtl files
 ## Installation and dependencies
 
 Clone the repository:
