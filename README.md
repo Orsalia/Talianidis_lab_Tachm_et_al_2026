@@ -62,7 +62,7 @@ Scripts and configuration files support preparation and analysis of promoter cap
 
 R scripts, notebooks, and shell commands cover TAD comparisons, insulation profiles, and aggregate contact analysis near ChIP-seq binding sites. Input matrices and genomic interval files must use compatible reference assemblies and chromosome naming conventions.
 
-### 4. Data-constrained 3D chromosome modeling (Ariadne-3D pipeline)
+4. Data-constrained 3D chromosome modeling (Ariadne-3D pipeline)
 
 ![ARIADNE-3D Chromatin Reconstruction](ARIADNE_3D.png)
  
